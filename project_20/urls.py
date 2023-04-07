@@ -19,8 +19,10 @@ from app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Insert_Topic/',Insert_Topic,name='Insert_Topic'),
-    path('Insert_WebPage/',Insert_WebPage,name='Insert_WebPage'),
-    path('Insert_AccessRecord/',Insert_AccessRecord,name='Insert_AccessRecord'),
+    path('insert_t/',insert_t,name='insert_t'),
+    path('insert_w/',insert_w,name='insert_w'),
+    path('insert_a/',insert_a,name='insert_a'),
+
+
 ]
 

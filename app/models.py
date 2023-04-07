@@ -11,7 +11,7 @@ class Webpage(models.Model):
     topic_name=models.ForeignKey(Topic,on_delete=models.CASCADE)
     name=models.CharField(max_length=100,unique=True)
     url=models.URLField()
-    email=models.EmailField(default='cricket@gmail.com')
+    email=models.EmailField(default='cricket@gmail.com') # if we add new coloumn after table creation defalut is mandatory
     def __str__(self):
         return self.name
 
